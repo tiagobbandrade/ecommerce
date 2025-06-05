@@ -1,3 +1,5 @@
+import { ProductListPage } from "./pages/products-list";
+
 export function App() {
-  return <h1 className="text-vilet-500">Hello world</h1>;
+  return <ProductListPage />;
 }
