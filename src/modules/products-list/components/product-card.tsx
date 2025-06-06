@@ -1,17 +1,8 @@
 import { Star } from "lucide-react";
+import type { Product } from "../types/repsonse.types";
 
 type ProductCardProps = {
-  product: {
-    id: string;
-    title: string;
-    price: number;
-    image: string;
-    description: string;
-    rating: {
-      rate: number;
-      count: number;
-    };
-  };
+  product: Product;
 };
 
 export function ProductCard({
@@ -20,18 +11,18 @@ export function ProductCard({
   return (
     <div
       title={title}
-      className="p-5 bg-white rounded-md shadow-sm flex items-center gap-4 cursor-pointer"
+      className="p-5 bg-white rounded-md shadow-sm flex items-center gap-4 cursor-pointer h-full"
     >
       <img
         src={image}
         alt={`${title} image`}
-        className="w-12 h-16 object-cover"
+        className="w-12 h-16 object-contain"
       />
-      <div className="w-full">
+      <div className="w-full overflow-hidden">
         <h3 className="text-sm font-light">
           <a href="#">{title}</a>
         </h3>
-        <p className="text-xs text-black/50">{description}</p>
+        <p className="text-xs text-black/50 truncate w-full">{description}</p>
         <div className="flex items-center justify-between w-full mt-1.5">
           <data value={price} className="text-sm font-medium">
             <span className="text-[10px]">R$</span>
