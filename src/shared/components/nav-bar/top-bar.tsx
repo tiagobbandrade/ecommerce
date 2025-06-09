@@ -35,7 +35,7 @@ export function TopBar({ renderBasket = true }: { renderBasket?: boolean }) {
               <ShoppingBasket strokeWidth={1.5} size={24} />
               {cart.length > 0 && (
                 <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center text-xs text-white font-medium">
-                  {cart.length}
+                  {cart.reduce((total, acc) => total + acc.quantity, 0)}
                 </span>
               )}
             </div>
