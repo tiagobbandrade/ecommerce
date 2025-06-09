@@ -20,7 +20,6 @@ export function TopBar({ renderBasket = true }: { renderBasket?: boolean }) {
           <ul className="flex items-center gap-8">
             <NavbarItem href="/" label="Início" />
             <NavbarItem href="/products#products" label="Produtos" />
-            <NavbarItem href="#" label="Sobre nós" />
           </ul>
         </nav>
 
