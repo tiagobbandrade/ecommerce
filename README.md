@@ -40,7 +40,7 @@
 1. Clone o repositório:
 
 ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
+   git clone (https://github.com/tiagobbandrade/ecommerce.git)
    cd seu-projeto
 ```
 
