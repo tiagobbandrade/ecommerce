@@ -41,7 +41,7 @@
 
 ```bash
    git clone https://github.com/tiagobbandrade/ecommerce.git
-   cd seu-projeto
+   cd ecommerce
 ```
 
 2. Instale as dependências:
